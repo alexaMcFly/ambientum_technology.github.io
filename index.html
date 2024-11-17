@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-sacalable:no, initial-scale=1.0,maximun-scale:1.0,minimum-scale:1.0">
+    <meta http-equiv="pragma" content="no-cache"/>
+
+    <link rel="shortcut icon" href="./img/pesa.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js?ver=1.8.1"></script>
+    <script src="https://kit.fontawesome.com/d249f303e9.js" crossorigin="anonymous"></script>
+    <title>Inicio</title>
+</head>
+
+<body>
+    <div class="contenedor">
+    <div class="sombra"></div>
+    <nav class="opuesto">
+                <ul class="nav__link nav__link--menu">
+                    <li class="nav__items">
+                        <a href="#" id="inicioBtn" class="nav__links active"><span class="icon-home icono"></span>Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#acerca" class="nav__links"><span class="icon-users icono"></span>Acerca del Dispositivo</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#instalaciones" class="nav__links"><span class="icon-office icono"></span>Protección del Hábitat</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#oferta" class="nav__links"><span class="icon-laptop icono"></span>Tecnología Aplicada</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#rana" class="nav__links"><span class="icon-leaf icono"></span>La Rana Tláloc</a>
+                    </li>
+                </ul>
+
+            <div class="nav__menu">
+                <img src="./img/menu_prueba.svg" class="svg-inject">
+            </div>
+        </nav>    
+    <header class="hero">
+    </header>
+    <div class="mapa despliega location-hiden">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3135.798913062163!2d-100.40389275171773!3d20.611588942943918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35ae786641281%3A0xa4d4338e88014934!2sITESM%20QRO!5e0!3m2!1ses-419!2smx!4v1731823949404!5m2!1ses-419!2smx" class="ubicacion" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    <section class="hero__container hero__sombra">
+        <h1 class="hero__title">Revisa el monitoreo de hoy</h1>
+        <div class="ubidots" id="location">
+            <a href="https://stem.ubidots.com/app/devices/" target="_blank" class="nav__links"><span class="icon-home icono"></span>Ubidots</a>
+        </div>
+        <div class="location" id="location">
+            <span>Visítanos hoy </span><img src="./img/bxs-map-gray.svg" class="maps">     
+        </div>
+    </section><div class="card_container">
+        <!-- Sección 1: Acerca del Dispositivo -->
+        <div id="acerca" class="container1 aos-animate" data-aos="fade-up">
+            <div class="box1">        
+                <span class="title__card">Nuestro Dispositivo de Monitoreo</span>
+                <p>El dispositivo desarrollado utiliza un microcontrolador ESP32 para capturar datos de temperatura y humedad en tiempo real. Estos datos son enviados a la plataforma Ubidots para su monitoreo remoto, permitiendo un análisis continuo y preciso del hábitat de la rana Tláloc.</p>
+            </div>
+            <div class="box2">
+                <img src="img/device.jpeg" alt="Dispositivo de monitoreo">
+            </div>
+        </div>
+    
+        <!-- Sección 2: Protección del Hábitat -->
+        <div id="instalaciones" class="container1 aos-animate" data-aos="fade-right">
+            <div class="box1">        
+                <span class="title__card">Protegiendo el Hábitat</span>
+                <p>La rana Tláloc, una especie endémica de México, vive en cuerpos de agua limpia y fresca. Nuestro sistema ayuda a garantizar que las condiciones ambientales, como la temperatura y la humedad, se mantengan dentro de rangos saludables para su desarrollo.</p>
+            </div>
+            <div class="box2">
+                <img src="img/foto_rana.jpg" alt="Rana Tláloc en su hábitat">
+            </div>
+        </div>
+    
+        <!-- Sección 3: Tecnología Aplicada -->
+        <div id="oferta" class="container1 aos-animate" data-aos="fade-left">
+            <div class="box1">        
+                <span class="title__card">Innovación Tecnológica</span>
+                <p>Gracias a la conectividad WiFi del ESP32, los datos recolectados son procesados y enviados en tiempo real a la nube. Esto permite a los investigadores acceder a gráficos y estadísticas desde cualquier lugar, mejorando la toma de decisiones en la conservación de la rana Tláloc.</p>
+            </div>
+            <div class="box2">
+                <img src="img/circuito.jpeg" alt="Tecnología utilizada en el proyecto">
+            </div>
+        </div>
+    
+        <!-- Sección 4: Conoce a la Rana Tláloc -->
+        <div id="rana" class="container1 aos-animate" data-aos="fade-up">
+            <div class="box1">        
+                <span class="title__card">Conoce a la Rana Tláloc</span>
+                <p>La rana Tláloc (<i>Lithobates tlaloci</i>) es una especie única de México. Su nombre rinde homenaje al dios azteca de la lluvia, Tláloc. Esta rana es un indicador importante de la salud de los ecosistemas acuáticos, lo que hace vital la conservación de su hábitat.</p>
+            </div>
+            <div class="box2">
+                <img src="img/rana_info.png" alt="Información de la rana Tláloc">
+            </div>
+        </div>
+    </div>
+    
+
+        <a href="https://wa.me/7711371546?text=Hola!%20quiero%20más%20información%20acerca%20del%20gimnasio%20de%20box" class="btn-wsp" target="_blank">
+            <i class="fa-brands fa-whatsapp ic-wsp"></i>
+        </a>
+    <section class="hero__contacto">
+        <div class="logo">
+            <h1 class="hero__logo">Ambientum</h1>
+        </div>
+        <div class="smedia">
+            <a href="#" class="logo_media"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="logo_media" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-youtube"></i>    
+            <a class="correo">ambientum.Mon@ambientum.org</a>
+        </div>
+        <div class="patrocinios"></div>
+        <div class="direccion">
+            <div class="esp_dir"></div>
+            <p class="dir">Epigmenio González, San Pablo, Santiago de Querétaro, Querétaro</p>
+        </div>
+    </section>
+    </div>
+    <script src="map.js"></script>
+    <script src="scroll.js"></script>
+</body>
+</html>
